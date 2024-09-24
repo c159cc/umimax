@@ -37,7 +37,10 @@ export default defineConfig({
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
+    '/dmc2Img': {
+      target: 'http://localhost:8080',
+      changeOrigin: true,
+    },
   },
-  devtool:'source-map'
+  devtool: 'source-map',
 });
-
